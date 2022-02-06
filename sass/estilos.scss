@@ -1,27 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* ========= Variables =========== */
-
-$font-family: 'Poppins', sans-serif;
-$azul: #36a9e1;
-$colorTexto: #373737;
-$colorTexto02: #f3f3f3;
-$textoCentro: center;
+@import "variables";
+@import "encabezado";
+@import "maps";
+@import "titulos";
+@import "parrafos";
 
 body{
     font-family: $font-family;
     overflow-x: hidden;
 }
 
-#encabezado{
-    background-color: $azul;
-
     /* Menu */
 
     #menu{
         color: #373737;
     }
-}
+
 
 .carousel-inner{
     max-height: 39rem;

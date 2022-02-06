@@ -1,0 +1,12 @@
+/* MIXIN Titulos */
+@mixin titulos {
+    font-family: $font-family;
+    text-align: center;
+    color: $azul;
+    
+    
+}
+
+.formatoTitulos {
+    @include titulos;
+}

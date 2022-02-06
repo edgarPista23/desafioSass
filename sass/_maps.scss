@@ -1,0 +1,9 @@
+$mapMenu:(inicio:black, nosotros:yellow, productos:pink, servicios:blue);
+
+@each $opcion, $color in $mapMenu {
+    .#{$opcion}--link{
+        color: $color;
+        text-decoration: none;
+        padding: 0px 10px;
+    }
+}

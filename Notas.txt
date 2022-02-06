@@ -1,0 +1,5 @@
+1.- Agregue titulos H1 a todas las páginas.
+2.- Se agregaron archivos por separado para importarlos a "estilo.scss"
+3.- Lo correspondiente a SASS II lo aplique al encabezado y al menu.
+4.- Para el extend, agregue parrafos para que se aplicara.
+

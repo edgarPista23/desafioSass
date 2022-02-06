@@ -1,0 +1,13 @@
+/* MIXIN */
+
+@mixin encabezado {
+    font-family: $font-family;
+    font-size: $tamFuente + 1; /* Acá la operación */
+    text-align: $textoCentro;
+    background-color: $azul;
+    color: white;
+}
+
+.encabezadoMixin {
+    @include encabezado;
+}
