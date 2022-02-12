@@ -4,18 +4,26 @@
 @import "maps";
 @import "titulos";
 @import "parrafos";
+@import "cards";
 
 body{
+    background-color: $colorFondo;
     font-family: $font-family;
     overflow-x: hidden;
 }
 
-    /* Menu */
+.navbar {
+    background-color: $azul_claro;
+    margin-bottom: 0;
+}
 
-    #menu{
-        color: #373737;
-    }
+.navbar-nav {
+    background-color: $azul_claro;    
+}
 
+#imagenAbeja {
+    background-color: $azul_claro;
+}
 
 .carousel-inner{
     max-height: 39rem;
@@ -31,10 +39,6 @@ body{
         display: none;
     }
 
-.servicios-fila{
-    width: 100% !important;
-    text-align: $textoCentro;
-}
 }
 
 @media (max-width:576){
@@ -60,10 +64,6 @@ footer p{
     font-size: 26px;
     padding: 0 8px;
     color: $colorTexto02;
-}
-
-.titulo{
-    text-align: $textoCentro;
 }
 
 /* Cards */
@@ -131,7 +131,7 @@ padding: 10px 5px;
 }
     
 @media screen and (max-width:620px){
-    .container--cards{
+    .container--cards {
         width: 100%;
     }
 
@@ -142,4 +142,13 @@ padding: 10px 5px;
     .card {
         width: 80%;
     }
+}
+
+.imagen00 {
+    width: 400px;
+    height: 250px;
+}
+
+.footer-espacio{
+    padding: 20px;
 }

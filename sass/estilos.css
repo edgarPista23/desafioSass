@@ -7,8 +7,9 @@
   font-size: 1.1rem;
   /* Acá la operación */
   text-align: center;
-  background-color: #36a9e1;
+  background-color: #1C658C;
   color: white;
+  margin: 0%;
 }
 
 .inicio--link {
@@ -18,13 +19,13 @@
 }
 
 .nosotros--link {
-  color: yellow;
+  color: #F0A500;
   text-decoration: none;
   padding: 0px 10px;
 }
 
 .productos--link {
-  color: pink;
+  color: #FF5677;
   text-decoration: none;
   padding: 0px 10px;
 }
@@ -35,11 +36,30 @@
   padding: 0px 10px;
 }
 
+.inicio--titulo {
+  text-align: center;
+  color: black;
+}
+
+.nosotros--titulo {
+  text-align: center;
+  color: #F0A500;
+}
+
+.productos--titulo {
+  text-align: center;
+  color: #FF5677;
+}
+
+.servicios--titulo {
+  text-align: center;
+  color: blue;
+}
+
 /* MIXIN Titulos */
 .formatoTitulos {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  color: #36a9e1;
 }
 
 /* EXTEND */
@@ -51,17 +71,84 @@
 
 .EstiloParrafosDos {
   font-size: 35px;
-  color: #36a9e1;
+  color: #1C658C;
+}
+
+.contenedor_cards {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+}
+
+.card {
+  width: 330px;
+  height: 430px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 0px 80px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.contenedor_cards .cards:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor_cards .cards img {
+  width: 630px;
+  height: 520px;
+}
+
+.contenedor_cards .cards h4 {
+  font-weight: 600;
+}
+
+.contenedor_cards .cards p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .contenedor_cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 body {
+  background-color: #D8D2CB;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
-/* Menu */
-#menu {
-  color: #373737;
+.navbar {
+  background-color: #398AB9;
+  margin-bottom: 0;
+}
+
+.navbar-nav {
+  background-color: #398AB9;
+}
+
+#imagenAbeja {
+  background-color: #398AB9;
 }
 
 .carousel-inner {
@@ -75,10 +162,6 @@ body {
   }
   #equipo p {
     display: none;
-  }
-  .servicios-fila {
-    width: 100% !important;
-    text-align: center;
   }
 }
 
@@ -94,7 +177,7 @@ body {
 
 /* footer */
 footer {
-  background: #36a9e1;
+  background: #1C658C;
   min-height: 100px;
 }
 
@@ -107,10 +190,6 @@ footer p {
   font-size: 26px;
   padding: 0 8px;
   color: #f3f3f3;
-}
-
-.titulo {
-  text-align: center;
 }
 
 /* Cards */
@@ -127,7 +206,7 @@ footer p {
 
 .card {
   width: 20%;
-  background: #36a9e1;
+  background: #1C658C;
   border: 1px solid #373737;
   margin-bottom: 50px;
   -webkit-transition: 0.3s;
@@ -198,5 +277,14 @@ footer p {
   .card {
     width: 80%;
   }
+}
+
+.imagen00 {
+  width: 400px;
+  height: 250px;
+}
+
+.footer-espacio {
+  padding: 20px;
 }
 /*# sourceMappingURL=estilos.css.map */

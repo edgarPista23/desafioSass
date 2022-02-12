@@ -1,9 +1,18 @@
-$mapMenu:(inicio:black, nosotros:yellow, productos:pink, servicios:blue);
+$mapMenu:(inicio:black, nosotros:$colorAmarillo, productos:#FF5677, servicios:blue);
 
 @each $opcion, $color in $mapMenu {
     .#{$opcion}--link{
         color: $color;
         text-decoration: none;
-        padding: 0px 10px;
+        padding: 0px 10px;        
+    }
+}
+
+$mapTitulo:(inicio:black, nosotros:$colorAmarillo, productos:#FF5677, servicios:blue);
+
+@each $opcion, $color in $mapTitulo {
+    .#{$opcion}--titulo{
+        text-align: $textoCentro;
+        color: $color;        
     }
 }

@@ -16,11 +16,13 @@
       </head>
 <body>
      <!-- Encabezado -->
-     <header class="container-fluid d-flex justify-content-center" id="encabezado">
-        <p class="text-light mb-0 p-2 fs-6">Contacto: 55-51-00-13-25</p>
-    </header>
+    <!-- <header class="container-fluid d-flex justify-content-center" id="encabezado"> -->
+      <header class="encabezadoMixin"></header>
+      <p class = "encabezadoMixin">Contacto: 55-51-00-13-25</p>
+      <!-- <p class="text-light mb-0 p-2 fs-6">Contacto: 55-51-00-13-25</p> -->
+  </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light " id="menu">
+    <nav class="navbar navbar-expand-lg navbar-light" id="menu">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="./img/abejaP.png" alt="" width="120" height="80">
@@ -46,7 +48,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="sublimacion.html">Sublimación</a></li>
-                  <li><a class="dropdown-item" href="vinil_textil.html">Vinil Textil</a></li>
+                  <li><a class="dropdown-item" href="mantenimiento.html">Vinil Textil</a></li>
               </ul>
               </li>
             </ul>
@@ -54,41 +56,44 @@
         </div>
       </nav>
 
-      <div class="formatoTitulos">
+      <div class="formatoTitulos productos--titulo">
         <h1>PRODUCTOS</h1>
     </div>
 
     <!-- Cards -->
 
-    <section id="galeria">
-        <div class="contenedor">
-            
-            <div class="titulo">
-            <h2>Galería de Imagenes</h2>
-            <p>Conoce nuestros productos, ponemos tu logo donde quieras</p>
-        </div>
-        
-            <div class="gridPadre">
-                <img src="./img/Taza_P.png" alt="Servicios" class="umagenGaleria imagenUno tamañoimg">
-                <img src="./img/Playera.jpg" alt="Servicios" class="umagenGaleria imagenDos tamañoimg">
-                <img src="./img/Pared.png" alt="Servicios" class="umagenGaleria imagenTres tamañoimg">
-                <img src="./img/sudadera.png" alt="Servicios" class="umagenGaleria imagenCuatro tamañoimg" id="sudadera">
-                <img src="./img/sudaderaNegra.png" alt="Servicios" class="umagenGaleria imagenCinco tamañoimg" id="sudaderaNegra">
-                <img src="./img/Gorra_P.png" alt="Servicios" class="umagenGaleria imagenSeis tamañoimg" id="gorra">
-            </div>
-        </div>
-    </section>
+    <div class="contenedor_cards">
+
+      <div class="card">
+        <img src="./img/Gorra_P.png">
+        <h4>Gorras</h4>
+        <p>Productos de excelente calidad que puedes personalizar a tu gusto y a un precio accesible</p>
+      </div>
+
+      <div class="card">
+        <img src="./img/Gorra_P.png">
+        <h4>Tazas</h4>
+        <p>Productos de excelente calidad que puedes personalizar a tu gusto y a un precio accesible</p>
+      </div>
+
+      <div class="card">
+        <img src="./img/Gorra_P.png">
+        <h4>Playeras</h4>
+        <p>Productos de excelente calidad que puedes personalizar a tu gusto y a un precio accesible</p>
+      </div>
+
+    </div>
     
     <!-- Footer -->
 
-    <section>
+    <section class="footer-espacio">
         <div class="w-75 m-auto text-center" id="equipo">
             <h1 class="mb-5 fs-2">Personaliza lo que quieras <span class="text-primary">Pista Sublimación</span></h1>
             <p class="EstiloParrafosDos">Expertos en las técnicas de Sublimación y Vinil Textil</p>
             <p class="EstiloParrafos">Te asesoramos y te apoyamos con tu diseño</p>
         </div>
         <div class="mt-5 text-center">
-            <img class="img-fluid" src="./img/Portada_02.jpg" alt="Imagen grande de la empresa">
+            <img class="img-fluid imagen00" src="./img/portada.png" alt="Imagen grande de la empresa">
         </div>
     </section>
 
