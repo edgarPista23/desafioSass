@@ -19,10 +19,10 @@
 
 <body>
 
-    <!-- Encabezado -->
+ <!-- Encabezado -->
     <!-- <header class="container-fluid d-flex justify-content-center" id="encabezado"> -->
         <header class="encabezadoMixin"></header>
-        <p class = "encabezadoMixin">Contacto: 55-51-00-13-25</p>
+        <p class = "encabezadoMixin">INICIO</p>
         <!-- <p class="text-light mb-0 p-2 fs-6">Contacto: 55-51-00-13-25</p> -->
     </header>
 
@@ -38,11 +38,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="inicio--link" aria-current="page" href="index.html">Inicio</a>
+                    <li class="nav-item menu-select">
+                        <a class="inicio--link text-menu-selected" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nosotros--link" href="nosotros.html">Nosotros</a>
+                        <a class="nosotros--link" href="nosotros.html">¿Quién soy?</a>
                     </li>
                     <li class="nav-item">
                         <a class="productos--link" href="productos.html">Productos</a>
@@ -57,30 +57,45 @@
                             <li><a class="dropdown-item" href="mantenimiento.html">Vinil Textil</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="contacto--link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="formatoTitulos inicio--titulo">
-    <h1>INICIO</h1>
+<!-- PORTADA -->
+<div class="container-cover">
+    <div class="container-info-cover">
+        <h2>Con nosotros ¡Todo es posible!</h2>
+        <p>Productos personalizados como tu lo imaginaste</p>
+    </div>
 </div>
 
-    <!--SLIDER DE IMAGENES-->
+<!-- Cards -->
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img src="./img/carr01.jpg" class="d-block w-100" alt="Imagen inicio 01">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="./img/carr02.jpg" class="d-block w-100" alt="Imagen inicio 02">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="./img/carr03.jpg" class="d-block w-100" alt="Imagen inicio 03">
-            </div>
-        </div>
+<div class="contenedor_cards">
+
+    <div class="card">
+      <img src="./img/subli_01.jpg">
+      <h4>DISEÑOS</h4>
+      <p>Diseños exclusivos en tus prendas</p>
     </div>
+
+    <div class="card">
+      <img src="./img/subli_02.jpg">
+      <h4>SUBLIMACIÓN</h4>
+      <p>Hacer que la materia pase del estado solido al gaseoso, sin pasar en ningún momento por el estado liquido.</p>
+    </div>
+
+    <div class="card">
+      <img src="./img/textil_01.jpg">
+      <h4>VINIL</h4>
+      <p>Estampado de vinil textil en todo tipo de prendas</p>
+    </div>
+
+  </div>
 
     <!-- Intro -->
 

@@ -1,28 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400;500;600;700;800;900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap');
+/*
+font-family: 'Manjari', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
 @import "variables";
 @import "encabezado";
 @import "maps";
 @import "titulos";
 @import "parrafos";
 @import "cards";
+@import "portada";
+@import "menu";
+@import "nosotros";
+@import "contacto";
 
 body{
-    background-color: $colorFondo;
+    background-color: $color-fondo-uno;
     font-family: $font-family;
     overflow-x: hidden;
 }
 
 .navbar {
-    background-color: $azul_claro;
-    margin-bottom: 0;
+    background-color: $color-fondo-uno;
 }
 
 .navbar-nav {
-    background-color: $azul_claro;    
+    background-color: $color-fondo-uno;    
 }
 
 #imagenAbeja {
-    background-color: $azul_claro;
+    background-color: $color-fondo-uno;
 }
 
 .carousel-inner{
